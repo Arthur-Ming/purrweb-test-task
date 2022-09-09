@@ -1,0 +1,46 @@
+.easier-ordering {
+  &__box {
+  }
+
+  &__content {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  &__items {
+    display: flex;
+    justify-content: center;
+    position: relative;
+  }
+
+  &__image {
+    display: block;
+    width: 868px;
+    height: 1039px;
+  }
+
+  &__item {
+    position: absolute;
+    max-width: 285px;
+    padding: 22px;
+    background: #000000;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 18px;
+    &:nth-child(2) {
+      top: 0;
+      left: 0;
+    }
+    &:nth-child(3) {
+      top: 50px;
+      left: 0;
+    }
+    &:nth-child(4) {
+      top: 50px;
+      left: 200px;
+    }
+    &:nth-child(5) {
+      top: 0px;
+      left: 200px;
+    }
+  }
+}

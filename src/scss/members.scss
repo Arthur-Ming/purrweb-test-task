@@ -1,0 +1,37 @@
+.members {
+  &__box {
+    display: flex;
+    justify-content: center;
+    column-gap: 81px;
+    padding-bottom: 60px;
+  }
+
+  &__item {
+    padding: 64px 90px 62px 55px;
+    flex: 1 1 503px;
+    max-width: 503px;
+    height: 312px;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 21px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 30px;
+  }
+
+  &__text {
+    margin: 0px;
+    font-family: 'Noto-sans-700';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 41px;
+  }
+
+  &__link {
+    font-size: 24px;
+    line-height: 33px;
+    text-decoration-line: underline;
+    color: #ffffff;
+  }
+}

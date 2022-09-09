@@ -1,0 +1,44 @@
+.footer {
+  &__box {
+  }
+
+  &__top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 32px;
+  }
+
+  &__title {
+    text-transform: uppercase;
+    font-family: 'Noto-sans-700';
+    font-size: 24px;
+    line-height: 33px;
+    margin: 0;
+  }
+  &__store-box {
+    column-gap: 60px;
+  }
+
+  &__columns {
+    margin-top: 155px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__column {
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+  }
+
+  &__logo {
+    width: 81px;
+    height: 16px;
+  }
+
+  &__text {
+    margin: 0;
+    color: #fff;
+  }
+}

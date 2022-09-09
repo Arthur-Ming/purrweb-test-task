@@ -1,0 +1,25 @@
+.header {
+  &__box {
+    padding-top: 23px;
+    display: flex;
+    align-items: center;
+    column-gap: 108px;
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      width: 783.03px;
+      height: 662.63px;
+      background-color: rgba(250, 0, 255, 0.2);
+      filter: blur(250px);
+      transform: rotate(-15deg);
+      transform-origin: 50% 0 0;
+      left: calc(100% - 783px);
+      top: 0px;
+    }
+  }
+  &__auth {
+    color: #fff;
+  }
+}

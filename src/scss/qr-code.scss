@@ -1,0 +1,16 @@
+.qr-code {
+  padding-top: 100px;
+  background: linear-gradient(180deg, #000 0, rgba(0, 0, 0, 0) 200px, #000 400px) no-repeat left/50%,
+    url(../assets/img/qr-code/03.jpg) no-repeat left top/50%,
+    url(../assets/img/qr-code/04.jpg) no-repeat right top/50%;
+  &__box {
+    display: flex;
+  }
+
+  &__images {
+    display: flex;
+  }
+
+  &__image {
+  }
+}

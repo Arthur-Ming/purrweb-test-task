@@ -1,0 +1,27 @@
+.google-play,
+.app-store {
+  display: block;
+  height: 51px;
+  overflow: hidden;
+  transition: all 0.2s ease 0s;
+
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.233);
+  }
+}
+
+.app-store {
+  width: 163px;
+  border-radius: 10px;
+  background: url('../assets/img/stores/01.svg') 0 0 / cover no-repeat;
+}
+.google-play {
+  width: 184px;
+  border-radius: 7px;
+  background: url('../assets/img/stores/02.svg') 0 0 / cover no-repeat;
+}
+
+.store-box {
+  display: flex;
+  column-gap: 28px;
+}
