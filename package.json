@@ -1,0 +1,18 @@
+{
+  "version": "0.1.0",
+  "description": "My new js application",
+  "private": true,
+  "name": "my-app",
+  "scripts": {
+    "start": "rss-scripts start",
+    "build": "rss-scripts build",
+    "eslint": "eslint \"src/**/*.js\"",
+    "eslint:fix": "eslint --fix \"**/*.js\""
+  },
+  "devDependencies": {
+    "rss-scripts": "^0.2.4"
+  },
+  "dependencies": {
+    "normalize.css": "^8.0.1"
+  }
+}
