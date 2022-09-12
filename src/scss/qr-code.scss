@@ -54,4 +54,12 @@
     margin-top: 34px;
     margin-left: 2px;
   }
+  &__nightlife {
+    display: block;
+    position: absolute;
+    top: -18px;
+    left: calc(100% - 155px);
+    width: 159px;
+    height: 74px;
+  }
 }

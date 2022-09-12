@@ -1,6 +1,18 @@
 .easier-ordering {
   &__box {
     padding-top: 190px;
+    position: relative;
+    &::after {
+      content: '';
+      position: absolute;
+      left: calc(100% - 100px);
+      top: 375px;
+      width: 287px;
+      height: 267px;
+      background: linear-gradient(12deg, #f101bf 3%, #0066ff 97%);
+      transform: rotate(6deg);
+      filter: blur(250px);
+    }
   }
 
   &__content {
