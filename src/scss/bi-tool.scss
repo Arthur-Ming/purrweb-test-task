@@ -1,11 +1,21 @@
 .bi-tool {
   &__box {
-    padding-top: 200px;
+    padding-top: 203px;
+    padding-right: 24px;
+    padding-bottom: 223px;
     display: flex;
+    justify-content: space-between;
+  }
+  &__content {
+    margin-top: 88px;
+    row-gap: 32px;
   }
 
   &__icon {
-    width: 600px;
-    height: 446px;
+    width: 704px;
+    height: 523;
+  }
+  &__text {
+    width: 395px;
   }
 }

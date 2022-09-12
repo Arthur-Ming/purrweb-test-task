@@ -25,9 +25,9 @@ body {
   flex-direction: column;
   overflow: hidden;
   &__box {
-    max-width: $maxWidthContainer;
+    max-width: 1264px;
     margin: 0 auto;
-    padding: 0px 100px;
+    padding: 0px 12px;
   }
 }
 main {
@@ -49,5 +49,7 @@ main {
   &__text {
     font-size: 18px;
     line-height: 25px;
+    margin: 0;
+    width: 315px;
   }
 }

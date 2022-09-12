@@ -1,4 +1,18 @@
 .get-in-touch {
+  &__box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .section__text {
+      width: 100%;
+      text-align: center;
+    }
+  }
   &__form {
     padding: 0px 211px;
     margin: 82px auto;

@@ -5,6 +5,7 @@
     justify-content: flex-end;
     padding-top: 176px;
     padding-bottom: 489px;
+    padding-right: 75px;
   }
 
   &__content {
@@ -13,11 +14,12 @@
   }
 
   &__image {
-    width: 498px;
+    display: block;
+    width: 510px;
     height: 999px;
     position: absolute;
-    top: -60px;
-    left: 0px;
+    top: -65px;
+    left: -90px;
     transform: rotate(90deg);
   }
 }

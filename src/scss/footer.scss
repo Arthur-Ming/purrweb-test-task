@@ -1,8 +1,11 @@
 .footer {
   &__box {
+    padding-top: 0px;
+    padding-bottom: 86px;
   }
 
   &__top {
+    margin-top: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -15,6 +18,8 @@
     font-size: 24px;
     line-height: 33px;
     margin: 0;
+
+    letter-spacing: 0.03em;
   }
   &__store-box {
     column-gap: 60px;
@@ -29,16 +34,55 @@
   &__column {
     display: flex;
     flex-direction: column;
-    row-gap: 25px;
   }
 
   &__logo {
-    width: 81px;
-    height: 16px;
+    width: 82px;
+    height: 17px;
   }
 
   &__text {
     margin: 0;
     color: #fff;
+    font-family: 'Avenir';
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+    margin-top: 15px;
+    &:nth-child(4) {
+      margin-top: 20px;
+      font-weight: 800;
+      letter-spacing: 0.4px;
+    }
+  }
+  &__column--right {
+    row-gap: 25px;
+    margin-top: -3px;
+    .footer__text {
+      margin: 0;
+      font-family: 'Avenir';
+      font-weight: 800;
+      letter-spacing: 0.4px;
+    }
+  }
+  &__link {
+    display: block;
+    margin: 0;
+    color: #fff;
+    font-family: 'Avenir';
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: 0.4px;
+  }
+
+  &__app-store {
+    width: 259px;
+    height: 81px;
+  }
+
+  &__google-play {
+    width: 292px;
+    height: 81px;
   }
 }

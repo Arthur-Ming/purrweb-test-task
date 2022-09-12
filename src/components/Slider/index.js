@@ -28,7 +28,7 @@ export default class Slider {
   components = {};
   slides = [];
   activeSlideIndex = 0;
-  delay; /* Boolean */
+  delay; /*number*/
   isTrackAnimated = false;
 
   onButtonPrevClick = () => {
@@ -49,6 +49,9 @@ export default class Slider {
     this.syncSubcomponents();
   };
 
+  onTrackAnimationStart = () => (this.isTrackAnimated = true);
+  onTrackAnimationEnd = () => (this.isTrackAnimated = false);
+
   initComponents() {
     const sliderPagination = new SliderPagination({ slidesCount: this.slides.length });
     const sliderTrack = new SliderTrack({ slides: this.slides, delay: this.delay });
@@ -59,9 +62,6 @@ export default class Slider {
 
     this.renderComponents(this.components);
   }
-
-  onTrackAnimationStart = () => (this.isTrackAnimated = true);
-  onTrackAnimationEnd = () => (this.isTrackAnimated = false);
 
   constructor({ slides = [], delay = 300 } = {}) {
     this.slides = slides;

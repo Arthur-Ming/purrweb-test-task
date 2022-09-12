@@ -1,6 +1,8 @@
 .id-scanner {
-  background: linear-gradient(179.83deg, #000000 -3.1%, rgba(0, 0, 0, 0) 56.76%, #000000 83.92%),
-    url(../assets/img/id-scanner/01.jpg) 0 0 / cover no-repeat;
+  background: linear-gradient(180deg, #000000 -3%, rgba(0, 0, 0, 0) 57%, #000000 100%),
+    url(../assets/img/id-scanner/01.webp) no-repeat center 0 / cover;
+
+  background-size: 100% 840px;
 
   &__box {
     display: flex;
@@ -9,6 +11,7 @@
   }
 
   &__images {
+    margin-top: 445px;
     display: flex;
     column-gap: 48px;
   }
@@ -17,5 +20,9 @@
     flex: 1 1 333px;
     max-width: 333px;
     height: 667px;
+  }
+  &__content {
+    margin-bottom: 75px;
+    max-width: 316px;
   }
 }

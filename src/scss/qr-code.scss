@@ -1,16 +1,57 @@
 .qr-code {
-  padding-top: 100px;
-  background: linear-gradient(180deg, #000 0, rgba(0, 0, 0, 0) 200px, #000 400px) no-repeat left/50%,
-    url(../assets/img/qr-code/03.jpg) no-repeat left top/50%,
-    url(../assets/img/qr-code/04.jpg) no-repeat right top/50%;
+  height: 1228px;
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    min-height: 682px;
+    left: 0;
+    top: 0;
+    background: linear-gradient(180deg, #000000 -3%, rgba(0, 0, 0, 0) 57%, #000000 100%),
+      url(../assets/img/qr-code/03.webp) no-repeat left center/50%,
+      url(../assets/img/qr-code/04.webp) no-repeat right center/50%;
+    z-index: 0;
+    background-size: 50% 617px;
+  }
+
   &__box {
     display: flex;
+    padding-right: 0px;
+    justify-content: space-between;
+    column-gap: 80px;
+    position: relative;
+    z-index: 10;
   }
 
   &__images {
     display: flex;
+    justify-content: space-between;
+    column-gap: 10px;
+    margin-top: 225px;
+    flex-grow: 1;
+  }
+  &__content {
+    margin-top: 535px;
+    margin-left: 80px;
+  }
+  &__text {
+    width: 315px;
   }
 
   &__image {
+    display: block;
+    width: 333px;
+    height: 667px;
+    margin-top: -10px;
+  }
+  &__image--left {
+    margin-top: 332px;
+    margin-right: -30px;
+  }
+  &__store-box {
+    margin-top: 34px;
+    margin-left: 2px;
   }
 }

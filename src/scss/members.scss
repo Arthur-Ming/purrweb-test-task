@@ -3,11 +3,12 @@
     display: flex;
     justify-content: center;
     column-gap: 81px;
+    padding-top: 73px;
     padding-bottom: 60px;
   }
 
   &__item {
-    padding: 64px 90px 62px 55px;
+    padding: 62px 90px 62px 54px;
     flex: 1 1 503px;
     max-width: 503px;
     height: 312px;
@@ -26,6 +27,7 @@
     font-weight: 700;
     font-size: 30px;
     line-height: 41px;
+    white-space: pre;
   }
 
   &__link {

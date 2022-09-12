@@ -1,22 +1,32 @@
 .easier-ordering {
   &__box {
+    padding-top: 190px;
   }
 
   &__content {
     display: flex;
+    padding-right: 60px;
     justify-content: flex-end;
+  }
+  &__text {
+    width: 100%;
+    margin-left: 4px;
   }
 
   &__items {
     display: flex;
     justify-content: center;
     position: relative;
+    margin: 0 auto;
+    width: 868px;
+    height: 1039px;
   }
 
   &__image {
     display: block;
-    width: 868px;
-    height: 1039px;
+    width: 100%;
+    height: 100%;
+    margin-left: 25px;
   }
 
   &__item {
@@ -26,21 +36,31 @@
     background: #000000;
     border: 1px solid rgba(255, 255, 255, 0.5);
     border-radius: 18px;
+    font-family: 'Roboto-500';
+    font-size: 23px;
+    line-height: 27px;
+
     &:nth-child(2) {
-      top: 0;
-      left: 0;
+      top: 205px;
+      left: 500px;
+      padding-right: 10px;
+      width: 268px;
     }
     &:nth-child(3) {
-      top: 50px;
+      top: 360px;
       left: 0;
+      padding: 29px 24px;
     }
     &:nth-child(4) {
-      top: 50px;
-      left: 200px;
+      top: 640px;
+      left: 720px;
+      width: 185px;
+      padding: 18px 22px;
     }
     &:nth-child(5) {
-      top: 0px;
-      left: 200px;
+      top: 730px;
+      left: 222px;
+      padding: 19px 25px;
     }
   }
 }
