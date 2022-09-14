@@ -7,25 +7,24 @@
     &::after {
       content: '';
       position: absolute;
-      width: 250px;
-      height: 250px;
+      width: 450px;
+      height: 450px;
       left: 260px;
-      top: -40px;
-      background: linear-gradient(12deg, #f101bf 3%, #0066ff 97%);
-      opacity: 0.7;
-      filter: blur(250px);
-      transform: rotate(6deg);
+      top: -200px;
+      background: url('../assets/img/get-in-touch/01.svg') 0 0 / cover no-repeat;
+      @media (max-width: $md3) {
+        left: -50%;
+        top: -20%;
+      }
     }
     &::before {
       content: '';
       position: absolute;
-      top: calc(100% - 340px);
-      left: calc(100% - 200px);
-      width: 340px;
-      height: 340px;
-      background: linear-gradient(12deg, #f101bf 3%, #0066ff 97%);
-      filter: blur(340px);
-      transform: rotate(6deg);
+      top: calc(100% - 640px);
+      left: calc(100% - 400px);
+      width: 499px;
+      height: 874px;
+      background: url('../assets/img/get-in-touch/02.svg') 0 0 / cover no-repeat;
     }
   }
   &__header {

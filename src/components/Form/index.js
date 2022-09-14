@@ -51,7 +51,6 @@ export default class Form {
 
   onSubmit = (event) => {
     event.preventDefault();
-    console.log('submit');
     this.checkForm();
     if (!this.isFormOk()) {
       this.submitButton && (this.submitButton.disabled = true);

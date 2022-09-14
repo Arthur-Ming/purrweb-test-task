@@ -3,23 +3,7 @@
     padding-top: 0px;
     padding-bottom: 86px;
     position: relative;
-    &::after {
-      content: '';
-      position: absolute;
-      width: 410px;
-      height: 410px;
-      top: calc(100% - 300px);
-      left: -200px;
 
-      background: linear-gradient(12deg, #f101bf 3%, #0066ff 97%);
-      filter: blur(340px);
-      transform: rotate(6deg);
-      @media (max-width: $md3) {
-        width: 224px;
-        height: 224px;
-        filter: blur(138px);
-      }
-    }
     @media (max-width: $md3) {
       padding-bottom: 26px;
     }
