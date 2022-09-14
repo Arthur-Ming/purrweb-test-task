@@ -54,7 +54,6 @@ export default class SliderPagination {
   }
 
   setActiveDot = (dotIndex) => {
-    console.log(dotIndex);
     this.activeDotIndex = dotIndex;
     this.dotElems.forEach((dot) => {
       dot.classList.contains(activeDotClass) && dot.classList.remove(activeDotClass);
