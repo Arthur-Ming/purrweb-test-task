@@ -5,6 +5,8 @@
   justify-content: center;
   column-gap: 24px;
   row-gap: 23px;
+  position: relative;
+  z-index: 100;
   @media (max-width: $md3) {
     row-gap: 16px;
   }
