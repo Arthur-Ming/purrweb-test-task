@@ -5,8 +5,6 @@
 
 ### task : https://docs.google.com/document/d/1PoVCVInY60bO7UoLU8skcdqlgLmiPyYKpUZo2MMqV9A/edit
 
-### solution: https://github.com/Arthur-Ming/purrweb-test-task
-
 ### deploy :
 
 - landing: https://arthur-ming.github.io/purrweb-test-task/
