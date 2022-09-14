@@ -13,15 +13,23 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @media (max-width: $md3) {
+      column-gap: 60px;
+    }
   }
 
   &__text {
     font-size: 14px;
     line-height: 19px;
+    @media (max-width: $md3) {
+      font-size: 12px;
+      line-height: 16px;
+    }
   }
 
   &__button {
-    width: 132px;
+    flex: 1 0 132px;
+    max-width: 132px;
     height: 50px;
     margin-right: -70px;
     background: rgba(255, 255, 255, 0.1);
@@ -29,6 +37,14 @@
     border-radius: 6px;
     color: #ffffff;
     cursor: pointer;
+    @media (max-width: 1400px) {
+      margin-right: 0px;
+    }
+    @media (max-width: $md3) {
+      flex: 1 0 92px;
+      max-width: 92px;
+      height: 50px;
+    }
   }
   &--hidden {
     transform: translateY(0%);

@@ -6,10 +6,10 @@
   "scripts": {
     "start": "rss-scripts start",
     "build": "rss-scripts build",
-    "eslint": "eslint \"src/**/*.js\"",
-    "eslint:fix": "eslint --fix \"**/*.js\""
+    "deploy": "gh-pages -d dist"
   },
   "devDependencies": {
+    "gh-pages": "^4.0.0",
     "rss-scripts": "^0.2.4"
   },
   "dependencies": {

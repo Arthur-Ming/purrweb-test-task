@@ -4,32 +4,83 @@
   &__box {
     padding-top: 30px;
     padding-bottom: 98px;
+    @media (max-width: $md5) {
+      padding-top: 70px;
+    }
+    @media (max-width: $md3) {
+      padding-bottom: 40px;
+    }
   }
 
   &__columns {
     display: flex;
-    column-gap: 180px;
+    column-gap: calc(15px + 165 * ((100vw - 375px) / (1440 - 375)));
+
+    @media (min-width: $md1) {
+      column-gap: 180px;
+    }
+    @media (max-width: $md5) {
+      column-gap: 15px;
+    }
   }
 
   &__column {
     flex: 1 1 50%;
+    @media (max-width: $md3) {
+      flex: 0 0 50%;
+      max-width: 50%;
+    }
+    @media (max-width: $md4) {
+      flex: 0 0 240px;
+      max-width: 240px;
+    }
   }
 
   &__title {
-    margin-top: 125px;
     font-family: 'Montserrat-700';
-    font-size: 64px;
-    line-height: 70px;
+    font-size: calc(35px + 29 * ((100vw - 375px) / (1440 - 375)));
+    line-height: calc(40px + 30 * ((100vw - 375px) / (1440 - 375)));
+    margin-top: calc(35px + 90 * ((100vw - 375px) / (1440 - 375)));
     white-space: nowrap;
+
+    @media (min-width: $md1) {
+      font-size: 64px;
+      line-height: 70px;
+      margin-top: 125px;
+    }
+    @media (max-width: $md3) {
+      white-space: normal;
+    }
+    @media (max-width: $md5) {
+      margin-top: 35px;
+      font-size: 35px;
+      line-height: 40px;
+    }
   }
 
   &__text {
-    width: 492px;
-    font-size: 20px;
-    line-height: 27px;
+    max-width: 492px;
     position: relative;
     padding-left: 105px;
     margin-top: 129px;
+
+    font-size: calc(16px + 6 * ((100vw - 375px) / (1440 - 375)));
+    line-height: calc(22px + 5 * ((100vw - 375px) / (1440 - 375)));
+
+    @media (min-width: $md1) {
+      font-size: 20px;
+      line-height: 27px;
+      margin-top: 129px;
+    }
+    @media (max-width: $md5) {
+      font-size: 16px;
+      line-height: 22px;
+    }
+
+    @media (max-width: $md3) {
+      margin-top: 20px;
+      padding-left: 0px;
+    }
     &::after {
       content: '';
       position: absolute;
@@ -39,6 +90,9 @@
       filter: blur(100px);
       left: 0;
       top: -74px;
+      @media (max-width: $md3) {
+        display: none;
+      }
     }
     &::before {
       content: '';
@@ -49,14 +103,29 @@
       transform: rotate(-60deg);
       left: -32px;
       top: 20px;
+      @media (max-width: $md3) {
+        display: none;
+      }
     }
   }
 
   &__image {
     display: block;
     margin-right: 84px;
-    width: 333px;
-    height: 668px;
+    width: calc(161px + 172 * ((100vw - 375px) / (1440 - 375)));
+    height: calc(323px + 345 * ((100vw - 375px) / (1440 - 375)));
+
+    @media (min-width: $md1) {
+      width: 333px;
+      height: 668px;
+    }
+    @media (max-width: $md3) {
+      margin-right: 0px;
+    }
+    @media (max-width: $md5) {
+      width: 161px;
+      height: 323px;
+    }
   }
 
   &__dowload {
@@ -64,6 +133,14 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @media (max-width: $md2) {
+      flex-direction: column;
+      justify-content: center;
+      margin-top: 40px;
+    }
+    @media (max-width: $md3) {
+      margin-top: 55px;
+    }
   }
 
   &__dowload-title {
@@ -71,8 +148,24 @@
     text-transform: uppercase;
     font-size: 35px;
     line-height: 70px;
+
+    font-size: calc(24px + 11 * ((100vw - 375px) / (1440 - 375)));
+    line-height: calc(30px + 40 * ((100vw - 375px) / (1440 - 375)));
+
+    @media (min-width: $md1) {
+      font-size: 35px;
+      line-height: 70px;
+    }
+    @media (max-width: $md5) {
+      font-size: 24px;
+      line-height: 30px;
+    }
   }
   &__store-box {
     margin-right: 63px;
+    @media (max-width: $md2) {
+      margin-top: 34px;
+      margin-right: 0px;
+    }
   }
 }

@@ -33,12 +33,22 @@
     flex-direction: column;
     align-items: center;
     .section__text {
-      width: 100%;
       text-align: center;
+      width: 580px;
+      @media (max-width: $md3) {
+        width: 100%;
+        padding-left: 15px;
+        padding-right: 15px;
+      }
     }
   }
   &__form {
-    padding: 0px 211px;
+    max-width: 818px;
     margin: 82px auto;
+    @media (max-width: $md3) {
+      margin-top: 48px;
+      margin-bottom: 60px;
+      padding: 0 2px;
+    }
   }
 }

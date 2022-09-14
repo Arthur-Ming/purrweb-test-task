@@ -2,27 +2,96 @@
   background: linear-gradient(180deg, #000000 -3%, rgba(0, 0, 0, 0) 57%, #000000 100%),
     url(../assets/img/id-scanner/01.webp) no-repeat center 0 / cover;
 
-  background-size: 100% 840px;
+  background-size: 100% calc(300px + 540 * ((100vw - 375px) / (1440 - 375)));
+
+  @media (min-width: $md1) {
+    background-size: 100% 840px;
+  }
+  @media (max-width: $md5) {
+    background: linear-gradient(180deg, #000000 -3%, rgba(0, 0, 0, 0) 57%, #000000 100%),
+      url(../assets/img/id-scanner/01-768.jpg) no-repeat center 0 / cover;
+    background-size: 100% 263px;
+  }
 
   &__box {
     display: flex;
     align-items: flex-end;
-    column-gap: 130px;
+    column-gap: calc(20px + 110 * ((100vw - 992px) / (1440 - 992)));
+    @media (min-width: $md1) {
+      column-gap: 130px;
+    }
+    @media (max-width: $md2) {
+      column-gap: 20px;
+    }
+    @media (max-width: 1100px) {
+      flex-direction: column-reverse;
+      align-items: center;
+      justify-content: center;
+    }
+    @media (max-width: 1100px) {
+      padding-top: calc(222px + 378 * ((100vw - 375px) / (1100 - 375)));
+    }
+
+    @media (max-width: $md5) {
+      padding-top: 222px;
+      align-items: flex-start;
+    }
   }
 
   &__images {
-    margin-top: 445px;
+    margin-top: calc(200px + 245 * ((100vw - 1100px) / (1440 - 1100)));
     display: flex;
     column-gap: 48px;
+    @media (min-width: $md1) {
+      margin-top: 445px;
+    }
+    @media (max-width: 1100px) {
+      margin-top: 70px;
+    }
+    @media (max-width: 1100px) {
+      margin-top: 70px;
+    }
+    @media (max-width: 700px) {
+      width: 100%;
+      column-gap: 0px;
+      row-gap: 55px;
+      margin-top: 0px;
+      align-items: center;
+      flex-direction: column;
+    }
   }
 
   &__image {
-    flex: 1 1 333px;
-    max-width: 333px;
-    height: 667px;
+    flex: 1 1 calc(287px + 46 * ((100vw - 375px) / (1440 - 375)));
+    max-width: calc(287px + 46 * ((100vw - 375px) / (1440 - 375)));
+    height: calc(575px + 92 * ((100vw - 375px) / (1440 - 375)));
+    @media (min-width: $md1) {
+      flex: 1 1 333px;
+      max-width: 333px;
+      height: 667px;
+    }
+    @media (max-width: $md5) {
+      flex: 1 1 287px;
+      max-width: 287px;
+      height: 575px;
+    }
   }
   &__content {
     margin-bottom: 75px;
     max-width: 316px;
+    @media (max-width: $md3) {
+      max-width: 100%;
+      .section__text {
+        width: 100%;
+      }
+    }
+
+    @media (max-width: $md5) {
+      max-width: 100%;
+      margin-bottom: 70px;
+      .section__text {
+        width: 100%;
+      }
+    }
   }
 }

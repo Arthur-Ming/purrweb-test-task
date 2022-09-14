@@ -14,14 +14,30 @@
   width: 163px;
   border-radius: 10px;
   background: url('../assets/img/stores/01.svg') 0 0 / cover no-repeat;
+  @media (max-width: $md3) {
+    width: 185px;
+    height: 60px;
+    background: url('../assets/img/stores/03.svg') 0 0 / cover no-repeat;
+  }
 }
 .google-play {
   width: 184px;
   border-radius: 7px;
   background: url('../assets/img/stores/02.svg') 0 0 / cover no-repeat;
+  @media (max-width: $md3) {
+    width: 185px;
+    height: 60px;
+    background: url('../assets/img/stores/04.svg') 0 0 / cover no-repeat;
+  }
 }
 
 .store-box {
   display: flex;
   column-gap: 28px;
+  position: relative;
+  z-index: 100;
+  @media (max-width: $md4) {
+    flex-direction: column;
+    row-gap: 24px;
+  }
 }
