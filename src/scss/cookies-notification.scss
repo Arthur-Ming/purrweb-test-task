@@ -37,6 +37,7 @@
     border-radius: 6px;
     color: #ffffff;
     cursor: pointer;
+    transition: all 0.2s ease 0s;
     @media (max-width: 1400px) {
       margin-right: 0px;
     }
@@ -44,6 +45,9 @@
       flex: 1 0 92px;
       max-width: 92px;
       height: 50px;
+    }
+    &:hover {
+      background: #0d699e;
     }
   }
   &--hidden {

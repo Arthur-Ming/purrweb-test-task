@@ -2,6 +2,10 @@
   display: flex;
   align-items: center;
   column-gap: 12px;
+  transition: opacity 0.3s ease 0s;
+  &:hover {
+    opacity: 0.5;
+  }
   &__icon {
     width: 26px;
     height: 25px;
